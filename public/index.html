@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRIPS Tresen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #111111;
+    --grey: #555555;
+    --red: #DA3832;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #ffffff;
+    color: var(--black);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 32px 20px;
+  }
+  .page {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+  .logo {
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .logo .mark {
+    width: 110px;
+    height: auto;
+    margin: 0 auto 14px;
+    display: block;
+  }
+  .logo .tresen {
+    display: block;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .divider {
+    width: 56px;
+    height: 3px;
+    background: var(--red);
+    margin: 28px auto;
+    border-radius: 2px;
+  }
+  .block {
+    margin-bottom: 26px;
+  }
+  .block .label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-bottom: 6px;
+  }
+  .block .value {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .block .value a {
+    color: var(--red);
+    text-decoration: none;
+  }
+  .impressum-link {
+    margin-top: 8px;
+  }
+  .impressum-link button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--red);
+    cursor: pointer;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(17,17,17,0.6);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 10;
+  }
+  .overlay.open {
+    display: flex;
+  }
+  .modal {
+    background: #fff;
+    width: 100%;
+    max-width: 380px;
+    max-height: 85vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 28px 24px 24px;
+    text-align: left;
+    position: relative;
+    border-top: 5px solid var(--red);
+  }
+  .modal h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+    text-align: center;
+  }
+  .modal .m-block {
+    margin-bottom: 16px;
+  }
+  .modal .m-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-bottom: 4px;
+  }
+  .modal .m-value {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .modal .m-value a {
+    color: var(--red);
+    text-decoration: none;
+  }
+  .modal-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--grey);
+    cursor: pointer;
+    padding: 4px;
+  }
+  @media (max-width: 380px) {
+    .logo .grips { font-size: 52px; }
+    .logo .tresen { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="logo">
+      <svg class="mark" xmlns="http://www.w3.org/2000/svg" width="133.235" height="151.73" viewBox="0 0 133.235 151.73">
+        <g id="Group_1293" data-name="Group 1293" transform="translate(-291.722 -161.254)">
+          <g id="Group_1103" data-name="Group 1103" transform="translate(297.849 161.254)">
+            <path id="Path_779" data-name="Path 779" d="M401.453,161.254H302.526v29.6c0,.033,0,.067,0,.1a.775.775,0,0,0,.007.2,7.616,7.616,0,0,0,.771,2.936,5.922,5.922,0,0,0,5.513,3.255c.043,0,.086,0,.128,0h17.181l7.2,10.618L303.44,237.99h0v74.994H402.1v0l27.524-29.926V208.029l0,0Zm-92.512,33.422c-2.066-.05-2.712-.852-3.238-1.784a5.514,5.514,0,0,1-.5-1.937v0c0-.005,0-27.022,0-27.022h93.565V191.1a3.079,3.079,0,0,1-1.751,3.011,6.22,6.22,0,0,1-1.915.568c.036,0-19.953,0-40.728,0S312.042,194.673,308.941,194.676Zm26.978,12.063-6.369-9.394h65.632a7.857,7.857,0,0,0,3.095-.869,5.817,5.817,0,0,0,3.181-5.378c0-4.563,0-17.4-.005-24.177l24.058,39.819Z" transform="translate(-302.518 -161.254)" fill="#161615"/>
+            <g id="Group_1102" data-name="Group 1102" transform="translate(3.603 79.41)">
+              <g id="Group_1101" data-name="Group 1101">
+                <rect id="Rectangle_1104" data-name="Rectangle 1104" width="93.293" height="69.646" fill="#fff"/>
+              </g>
+            </g>
+          </g>
+          <path id="Path_780" data-name="Path 780" d="M307.254,213.331a.88.88,0,0,1,0,.128h0Z" transform="translate(-6.717 -22.522)" fill="#161615"/>
+          <g id="Group_1105" data-name="Group 1105" transform="translate(302.872 209.577)">
+            <g id="Group_1104" data-name="Group 1104">
+              <path id="Path_781" data-name="Path 781" d="M429.244,246.4l-25.911,28.29H311.368l28.176-28.29Z" transform="translate(-311.368 -246.402)" fill="#fff"/>
+            </g>
+          </g>
+          <g id="Group_1107" data-name="Group 1107" transform="translate(397.431 211.687)">
+            <g id="Group_1106" data-name="Group 1106">
+              <path id="Path_782" data-name="Path 782" d="M477.987,347.368V277.749l25.294-27.63V319.9Z" transform="translate(-477.987 -250.12)" fill="#fff"/>
+            </g>
+          </g>
+          <g id="Group_1113" data-name="Group 1113" transform="translate(308.682 168.644)">
+            <g id="Group_1108" data-name="Group 1108">
+              <path id="Path_783" data-name="Path 783" d="M329.889,183.119h7.747v10.125a21.891,21.891,0,0,1-3.546.862,23.129,23.129,0,0,1-3.4.247q-4.422,0-6.752-2.6t-2.331-7.46a9.841,9.841,0,0,1,2.7-7.374,10.274,10.274,0,0,1,7.5-2.645,14.517,14.517,0,0,1,5.8,1.2l-1.376,3.313a9.827,9.827,0,0,0-4.448-1.069,5.493,5.493,0,0,0-4.3,1.8,7,7,0,0,0-1.616,4.849,7.786,7.786,0,0,0,1.3,4.855,4.5,4.5,0,0,0,3.787,1.676,13.386,13.386,0,0,0,2.631-.267v-4.074h-3.7Z" transform="translate(-321.607 -174.276)" fill="#161615"/>
+            </g>
+            <g id="Group_1109" data-name="Group 1109" transform="translate(20.677 0.28)">
+              <path id="Path_784" data-name="Path 784" d="M362.182,186.805V194.3h-4.141V174.77h5.69q3.981,0,5.891,1.45a5.779,5.779,0,0,1,.962,7.466,6.28,6.28,0,0,1-2.685,2.1q4.408,6.585,5.743,8.508h-4.595l-4.662-7.493Zm0-3.366h1.336a5.108,5.108,0,0,0,2.9-.655,2.336,2.336,0,0,0,.935-2.057,2.136,2.136,0,0,0-.955-1.977,5.792,5.792,0,0,0-2.958-.588h-1.256Z" transform="translate(-358.041 -174.77)" fill="#161615"/>
+            </g>
+            <g id="Group_1110" data-name="Group 1110" transform="translate(38.736 0.28)">
+              <path id="Path_785" data-name="Path 785" d="M389.862,194.3V174.77H394V194.3Z" transform="translate(-389.862 -174.77)" fill="#161615"/>
+            </g>
+            <g id="Group_1111" data-name="Group 1111" transform="translate(47.792 0.28)">
+              <path id="Path_786" data-name="Path 786" d="M419.31,180.861a5.964,5.964,0,0,1-1.97,4.822,8.423,8.423,0,0,1-5.6,1.67H409.96V194.3h-4.141V174.77h6.238a8.294,8.294,0,0,1,5.4,1.53A5.575,5.575,0,0,1,419.31,180.861Zm-9.35,3.1h1.363a4.539,4.539,0,0,0,2.858-.754,2.641,2.641,0,0,0,.949-2.2,2.709,2.709,0,0,0-.8-2.15,3.724,3.724,0,0,0-2.491-.695H409.96Z" transform="translate(-405.819 -174.77)" fill="#161615"/>
+            </g>
+            <g id="Group_1112" data-name="Group 1112" transform="translate(63.768)">
+              <path id="Path_787" data-name="Path 787" d="M446.7,188.661a5.049,5.049,0,0,1-1.9,4.168,8.27,8.27,0,0,1-5.3,1.523,12.44,12.44,0,0,1-5.53-1.175v-3.847a22.772,22.772,0,0,0,3.346,1.243,9.916,9.916,0,0,0,2.5.36,3.564,3.564,0,0,0,2.091-.521,1.782,1.782,0,0,0,.728-1.549,1.714,1.714,0,0,0-.32-1.022,3.6,3.6,0,0,0-.942-.861,24.276,24.276,0,0,0-2.531-1.322,11.971,11.971,0,0,1-2.685-1.616,6.047,6.047,0,0,1-1.429-1.8,5.15,5.15,0,0,1-.535-2.4,5.046,5.046,0,0,1,1.756-4.074,7.3,7.3,0,0,1,4.856-1.483,11.456,11.456,0,0,1,2.905.361,20.044,20.044,0,0,1,2.891,1.015l-1.335,3.22a19.558,19.558,0,0,0-2.584-.895,8.327,8.327,0,0,0-2.01-.254,2.663,2.663,0,0,0-1.8.548,1.805,1.805,0,0,0-.628,1.429,1.763,1.763,0,0,0,.254.955,2.786,2.786,0,0,0,.808.788,24.805,24.805,0,0,0,2.625,1.369,10.448,10.448,0,0,1,3.753,2.624A5.122,5.122,0,0,1,446.7,188.661Z" transform="translate(-433.969 -174.276)" fill="#161615"/>
+            </g>
+          </g>
+          <g id="Group_1117" data-name="Group 1117" transform="translate(291.722 195.832)">
+            <g id="Group_1114" data-name="Group 1114">
+              <path id="Path_788" data-name="Path 788" d="M326.4,264.767l4.793-9.266s-27.622,0-31.286-.564-8.455-1.965-8.173-7.581,10.428-9.549,16.63-12.918,29.31-11.514,37.2-11.8,32.7-3.368,49.606,11.234c0,0,14.37,16.57-4.23,31.172l-5.918.561Z" transform="translate(-291.722 -222.183)" fill="#161615"/>
+            </g>
+            <g id="Group_1115" data-name="Group 1115" transform="translate(69.855 11.412)">
+              <path id="Path_789" data-name="Path 789" d="M416.219,242.292s8.173,8.146-1.409,16.288a24.2,24.2,0,0,0,12.964-6.459S423.828,244.82,416.219,242.292Z" transform="translate(-414.81 -242.292)" fill="#fff"/>
+            </g>
+            <g id="Group_1116" data-name="Group 1116" transform="translate(47.308 11.132)">
+              <path id="Path_790" data-name="Path 790" d="M386.917,257.525s-5.354-.282-11.836-7.022a24,24,0,0,1,10.992-8.7S378.463,250.5,386.917,257.525Z" transform="translate(-375.081 -241.798)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <span class="tresen">Tresen</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="block">
+      <div class="label">Adresse</div>
+      <div class="value">Altonaer Straße 22<br>10557 Berlin</div>
+    </div>
+
+    <div class="block">
+      <div class="label">Öffnungszeiten</div>
+      <div class="value">30 Minuten vor Spielbeginn<br>und in der Pause</div>
+    </div>
+
+    <div class="block">
+      <div class="label">Ansprechpartnerin</div>
+      <div class="value">Linde Malderie</div>
+    </div>
+
+    <div class="block">
+      <div class="label">E-Mail</div>
+      <div class="value"><a href="mailto:mail@grips-tresen.de">mail@grips-tresen.de</a></div>
+    </div>
+
+    <div class="block">
+      <div class="label">Instagram</div>
+      <div class="value"><a href="https://instagram.com/grips_tresen" target="_blank" rel="noopener">@grips_tresen</a></div>
+    </div>
+
+    <div class="impressum-link">
+      <button type="button" onclick="document.getElementById('impressum-overlay').classList.add('open')">Impressum</button>
+    </div>
+  </div>
+
+  <div class="overlay" id="impressum-overlay" onclick="if(event.target===this) this.classList.remove('open')">
+    <div class="modal">
+      <button class="modal-close" aria-label="Schließen" onclick="document.getElementById('impressum-overlay').classList.remove('open')">&times;</button>
+      <h2>Impressum</h2>
+
+      <div class="m-block">
+        <div class="m-label">Betreiber</div>
+        <div class="m-value">Café Tiergarten 1957 GmbH<br>Altonaer Str. 3<br>10557 Berlin</div>
+      </div>
+
+      <div class="m-block">
+        <div class="m-label">Kontakt</div>
+        <div class="m-value"><a href="mailto:mail@grips-tresen.de">mail@grips-tresen.de</a></div>
+      </div>
+
+      <div class="m-block">
+        <div class="m-label">Verantwortlich für den Inhalt</div>
+        <div class="m-value">Linde Malderie</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.getElementById('impressum-overlay').classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>
