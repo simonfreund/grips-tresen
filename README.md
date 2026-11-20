@@ -1,11 +1,11 @@
 # GRIPS Tresen Website
 
-Website für https://grips-tresen.de.
+Statische Website für https://grips-tresen.de, vorbereitet für GitHub Pages.
 
 ## Dateien
 
-- `public/index.html`: unveränderte Kopie der veröffentlichten Netlify-Website.
-- `netlify.toml`: Netlify veröffentlicht ausschließlich `public/`; kein Build-Schritt erforderlich.
+- `index.html`: unveränderte Kopie der veröffentlichten Website, inklusive Logo und Styles.
+- `.nojekyll`: direktes Ausliefern der statischen Dateien ohne Jekyll-Verarbeitung.
 
 ## Herkunft
 
@@ -14,10 +14,13 @@ Das Originalarchiv liegt außerhalb dieses Repositorys im Projektordner unter `b
 
 ## Lokal ansehen
 
-Im Repository-Ordner `python3 -m http.server 8080 --directory public` ausführen und http://localhost:8080 öffnen.
+Im Repository-Ordner `python3 -m http.server 8080` ausführen und http://localhost:8080 öffnen.
 
-## Veröffentlichung
+## Geplantes Hosting
 
-Das bestehende Netlify-Projekt `grips-tresen` soll dieses Repository verwenden.
+GitHub Pages: Branch `main`, Verzeichnis `/ (root)`.
+Domain: `grips-tresen.de`. Die Domain wird erst nach Abstimmung umgestellt.
+Es werden keine Build-Werkzeuge, Pakete oder zusätzlichen Hosting-Dienste benötigt.
+
 Vor Änderungen an der produktiven Website ist eine Abstimmung erforderlich.
 Die gewünschte Speise- und Getränkekarte ist noch nicht enthalten.
