@@ -4,7 +4,9 @@ Statische Website für https://grips-tresen.de, vorbereitet für GitHub Pages.
 
 ## Dateien
 
-- `index.html`: Website inklusive Logo und Styles.
+- `index.html`: Startseite mit animiertem Logo und Link zur Karte.
+- `karte.html`: Speise- und Getränkekarte mit allen Mengen, Preisen und Hinweisen.
+- `styles.css`, `karte.css`: gemeinsame Gestaltung und Kartenlayout.
 - `assets/`: GRIPS-Logo in Normal- und Blinzelzustand.
 - `downloads/GRIPS_Tresen_Preisliste_A4.pdf`: Preisliste zum Ansehen und Herunterladen.
 - `fonts/`: lokal eingebundene Rois Bold sowie Zine Sans Display OT Regular und Bold.
@@ -26,4 +28,4 @@ Domain: `grips-tresen.de`. Die Domain wird erst nach Abstimmung umgestellt.
 Es werden keine Build-Werkzeuge, Pakete oder zusätzlichen Hosting-Dienste benötigt.
 
 Vor Änderungen an der produktiven Website ist eine Abstimmung erforderlich.
-Die Speise- und Getränkekarte ist als PDF verlinkt.
+Die Speise- und Getränkekarte steht in `karte.html` als HTML und weiterhin als PDF-Download bereit.

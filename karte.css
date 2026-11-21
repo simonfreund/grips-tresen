@@ -1,0 +1,47 @@
+.menu-page {
+  display: block;
+  height: auto;
+  padding: 36px 24px 48px;
+}
+.menu-shell { max-width: 920px; margin: 0 auto; }
+.menu-header { text-align: center; margin-bottom: 52px; }
+.back-link { display: block; width: fit-content; font-size: 16px; margin-bottom: 24px; }
+.menu-header .mark { width: 78px; }
+.menu-header h1 { margin-bottom: 0; }
+.menu-subtitle { font-size: 23px; margin: 18px 0 12px; }
+.pdf-download, .back-link, .menu-notes a {
+  color: var(--red);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+.pdf-download { font-size: 16px; }
+.menu-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+.menu-category { margin-bottom: 36px; }
+.menu-category h2 {
+  font-family: 'Rois', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 10px;
+  margin: 0 0 8px;
+}
+.menu-category table { width: 100%; border-collapse: collapse; text-align: left; font-size: 19px; line-height: 1.35; }
+.menu-category th { font-weight: 400; padding: 12px 16px 12px 0; }
+.menu-category td { text-align: right; font-weight: 700; white-space: nowrap; vertical-align: top; padding: 12px 0; }
+.menu-category tr + tr { border-top: 1px solid #e9e7e4; }
+.portion { display: block; color: var(--grey); font-size: 15px; margin-top: 3px; }
+.menu-notes { border-top: 1px solid #d9d7d4; padding-top: 22px; color: var(--grey); font-size: 15px; line-height: 1.5; }
+.menu-notes p { max-width: 600px; margin: 0 0 12px; }
+.menu-notes .payment-note { color: var(--black); font-size: 18px; margin-bottom: 20px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 700px) {
+  .menu-page { padding: 24px 20px 36px; }
+  .menu-columns { grid-template-columns: 1fr; gap: 0; }
+  .menu-header { margin-bottom: 36px; }
+  .menu-header .tresen { font-size: clamp(24px, 6.6vw, 34px); }
+  .menu-category { margin-bottom: 30px; }
+}
