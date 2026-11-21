@@ -5,6 +5,8 @@ Statische Website für https://grips-tresen.de, vorbereitet für GitHub Pages.
 ## Dateien
 
 - `index.html`: Website inklusive Logo und Styles.
+- `assets/`: GRIPS-Logo in Normal- und Blinzelzustand.
+- `downloads/GRIPS_Tresen_Preisliste_A4.pdf`: Preisliste zum Ansehen und Herunterladen.
 - `fonts/`: lokal eingebundene Rois Bold sowie Zine Sans Display OT Regular und Bold.
 - `.nojekyll`: direktes Ausliefern der statischen Dateien ohne Jekyll-Verarbeitung.
 
@@ -24,4 +26,4 @@ Domain: `grips-tresen.de`. Die Domain wird erst nach Abstimmung umgestellt.
 Es werden keine Build-Werkzeuge, Pakete oder zusätzlichen Hosting-Dienste benötigt.
 
 Vor Änderungen an der produktiven Website ist eine Abstimmung erforderlich.
-Die gewünschte Speise- und Getränkekarte ist noch nicht enthalten.
+Die Speise- und Getränkekarte ist als PDF verlinkt.
