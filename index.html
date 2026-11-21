@@ -4,10 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GRIPS Tresen</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
+  @font-face {
+    font-family: 'Rois';
+    src: url('fonts/Rois-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Zine Sans Display OT';
+    src: url('fonts/Zine-Sans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Zine Sans Display OT';
+    src: url('fonts/Zine-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
   :root {
     --black: #111111;
     --grey: #555555;
@@ -20,7 +38,7 @@
     height: 100%;
     background: #ffffff;
     color: var(--black);
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: 'Zine Sans Display OT', Arial, Helvetica, sans-serif;
   }
   body {
     display: flex;
@@ -35,7 +53,8 @@
     text-align: center;
   }
   .logo {
-    font-weight: 800;
+    font-family: 'Rois', Arial, Helvetica, sans-serif;
+    font-weight: 700;
     letter-spacing: 0.02em;
     line-height: 1;
     margin-bottom: 6px;
@@ -63,8 +82,9 @@
     margin-bottom: 26px;
   }
   .block .label {
+    font-family: 'Rois', Arial, Helvetica, sans-serif;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--grey);
@@ -86,9 +106,9 @@
     background: none;
     border: none;
     padding: 0;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: 'Zine Sans Display OT', Arial, Helvetica, sans-serif;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--red);
@@ -120,8 +140,9 @@
     border-top: 5px solid var(--red);
   }
   .modal h2 {
+    font-family: 'Rois', Arial, Helvetica, sans-serif;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     margin: 0 0 18px;
     text-align: center;
@@ -130,8 +151,9 @@
     margin-bottom: 16px;
   }
   .modal .m-label {
+    font-family: 'Rois', Arial, Helvetica, sans-serif;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--grey);

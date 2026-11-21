@@ -4,7 +4,8 @@ Statische Website für https://grips-tresen.de, vorbereitet für GitHub Pages.
 
 ## Dateien
 
-- `index.html`: unveränderte Kopie der veröffentlichten Website, inklusive Logo und Styles.
+- `index.html`: Website inklusive Logo und Styles.
+- `fonts/`: lokal eingebundene Rois Bold sowie Zine Sans Display OT Regular und Bold.
 - `.nojekyll`: direktes Ausliefern der statischen Dateien ohne Jekyll-Verarbeitung.
 
 ## Herkunft
